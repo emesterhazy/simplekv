@@ -610,6 +610,7 @@ static int parse_opt(int key, char *arg, struct argp_state *state) {
             if ((endptr != NULL && *endptr != '\0') || st->requests < 0) {
                 argp_failure(state, 1, 0, "invalid number of requests");
             }
+            break;
         }
 
         case 't': {
@@ -618,6 +619,7 @@ static int parse_opt(int key, char *arg, struct argp_state *state) {
             if ((endptr != NULL && *endptr != '\0') || st->threads < 0) {
                 argp_failure(state, 1, 0, "invalid number of threads");
             }
+            break;
         }
 
         case 'k': {
@@ -628,12 +630,14 @@ static int parse_opt(int key, char *arg, struct argp_state *state) {
                 argp_failure(state, 1, 0, "invalid key");
             }
             st->n_commands += 1;
+            break;
         }
 
         case 'g': {
             parse_range(state, st, arg);
             st->range_set = 1;
             st->n_commands += 1;
+            break;
         }
 
         case ARGP_KEY_ARG:
@@ -653,6 +657,7 @@ static int parse_opt(int key, char *arg, struct argp_state *state) {
             
             default:
                 argp_failure(state, 1, 0, "too many arguments");
+                break;
         }
         break;
 
@@ -663,6 +668,7 @@ static int parse_opt(int key, char *arg, struct argp_state *state) {
             if (st->n_commands > 1) {
                 argp_error(state, "too many commands specified");
             }
+            break;
 
     }
     return 0;
