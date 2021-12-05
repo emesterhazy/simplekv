@@ -18,9 +18,14 @@ create.o: create.c create.h parse.h db_types.h simplekv.h
 
 get.o : get.c get.h db_types.h parse.h simplekv.h
 
+.PHONY: spdk
+spdk:
+	make -f spdk.mk
+
+
 .PHONY: clean
 clean:
-	rm -rf simplekv *.o
+	rm -rf simplekv *.o *.d
 
 
 .PHONY: clean
