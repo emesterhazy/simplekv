@@ -1,5 +1,5 @@
 Two licenses:
-BPF code and code in patches/ are under the Linux license (GPLv2). All userspace under the following license:
+Code in patches/ and tdp/ are under the Linux license (GPLv2). All userspace under the following license:
 ____
                                  Apache License
                            Version 2.0, January 2004
