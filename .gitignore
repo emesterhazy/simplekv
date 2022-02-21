@@ -1,5 +1,16 @@
 *.sw*
 *.txt
+onlyonmachine/
+
+# Binaries
 nndb
 db
-onlyonmachine/
+simplekv
+*.o
+
+# Dev cookies
+.idea
+.vscode
+
+# Makefile junk
+*.d
