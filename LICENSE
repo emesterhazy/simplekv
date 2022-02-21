@@ -1,4 +1,5 @@
-Source code in patches/ and tdp/ are under the Linux license (GPLv2), as follows:
+Source code in ddp-artifacts/patches/, ddp-artifacts/tdp/, and xrp-bpf are under the
+Linux license (GPLv2), as follows:
 ____
 		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991
@@ -342,7 +343,7 @@ library.  If this is what you want to do, use the GNU Library General
 Public License instead of this License.
 _____
 
-libbpf-boot/ is under its own license. 
+ddp-artifacts/libbpf-boot/ is under its own license. 
 
 All other source code files are licensed under the Apache 2.0 license:
 ____
